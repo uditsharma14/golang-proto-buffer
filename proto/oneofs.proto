@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package example.oneofs;
+
+option go_package = "protobufexample.com/m/proto";
+
+message Result {
+    oneof results {
+        string message =1;
+        uint32 id =2;
+    }
+}
